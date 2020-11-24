@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install xcaudit
-        uses: Alexander-Ignition/XCAudit@main
+        uses: Alexander-Ignition/XCAudit@feature/mac-archive
       - name: Build and test
         run: swift test --enable-code-coverage --disable-automatic-resolution 2>&1 | xcaudit
         shell: bash
